@@ -62,10 +62,22 @@
     <img src="https://via.placeholder.com/150">
     <h3>Pizza</h3>
     <p>₹299</p>
-    <button>Add to Cart</button>
+   <button onclick="addToCart('Smartphone')">Add to Cart</button>
+
+<button onclick="addToCart('T-Shirt')">Add to Cart</button>
+
+<button onclick="addToCart('Pizza')">Add to Cart</button>
   </div>
 
 </div>
 
 </body>
 </html>
+<script>
+let cart = [];
+
+function addToCart(product) {
+  cart.push(product);
+  alert(product + " added to cart!");
+}
+</script>
