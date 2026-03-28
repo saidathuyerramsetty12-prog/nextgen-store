@@ -3,13 +3,69 @@
 <head>
   <title>NextGen Store</title>
   <style>
-    body { font-family: Arial; text-align: center; }
+    body { margin: 0; font-family: Arial; }
+
+    header {
+      background: #232f3e;
+      color: white;
+      padding: 15px;
+      text-align: center;
+      font-size: 24px;
+    }
+
+    .products {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      padding: 20px;
+    }
+
+    .card {
+      border: 1px solid #ddd;
+      margin: 10px;
+      padding: 10px;
+      width: 200px;
+      text-align: center;
+      border-radius: 10px;
+    }
+
+    button {
+      background: orange;
+      border: none;
+      padding: 8px;
+      cursor: pointer;
+    }
   </style>
 </head>
+
 <body>
 
-<h1>Welcome to NextGen Store 🛒</h1>
-<p>Your website is working perfectly!</p>
+<header>NextGen Store 🛒</header>
+
+<div class="products">
+
+  <div class="card">
+    <img src="https://via.placeholder.com/150">
+    <h3>Smartphone</h3>
+    <p>₹15,000</p>
+    <button>Add to Cart</button>
+  </div>
+
+  <div class="card">
+    <img src="https://via.placeholder.com/150">
+    <h3>T-Shirt</h3>
+    <p>₹499</p>
+    <button>Add to Cart</button>
+  </div>
+
+  <div class="card">
+    <img src="https://via.placeholder.com/150">
+    <h3>Pizza</h3>
+    <p>₹299</p>
+    <button>Add to Cart</button>
+  </div>
+
+</div>
 
 </body>
 </html>
